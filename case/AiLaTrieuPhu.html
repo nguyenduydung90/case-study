@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<style>
+    #questionScreen {
+        text-align: center;
+        border-radius: 4px;
+        /* margin: 50px auto 50px auto; */
+        padding: 5px;
+        /* color: white; */
+        /*background-color: rgba(255,255,255,0.9);*/
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        bottom: 20%;
+        left: 25%;
+        background: #00a6ff;
+    }
+
+    tr td, tr th {
+        padding: 10px 0;
+    }
+    body{
+        background-image: url("img/anhnen3.png");
+        background-size: cover;
+    }
+    #point{
+        text-align: center;
+        border-radius: 4px;
+        bottom: 20%;
+
+    }
+    #time1{
+        width: 20px;
+    }
+    h2{
+        color: red;
+    }
+</style>
+
+<body>
+
+<!--<p id="demo"></p>-->
+<div id='point'>
+    <h2 id="result"></h2>
+</div>
+<div>
+   <h2>
+     Thời Gian:<span id="time1"></span>
+   </h2>
+</div>
+<div id="img"></div>
+<p id="sound"></p>
+<div id="questionScreen">
+
+
+    <table border="1px" width="100%">
+        <tr >
+            <th id="question" colspan="2" idQuestion=""></th>
+        </tr>
+        <tr>
+            <td id="asw1" onclick="chooseAswer(this.id)">asw1</td>
+            <td id="asw2" onclick="chooseAswer(this.id)">asw2</td>
+        </tr>
+        <tr>
+            <td id="asw3" onclick="chooseAswer(this.id)">asw3</td>
+            <td id="asw4" onclick="chooseAswer(this.id)">asw4</td>
+        </tr>
+    </table>
+</div>
+<script src="script.js"></script>
+
+<script src="sound/suond.js"></script>
+
+
+
+</body>
+</html>

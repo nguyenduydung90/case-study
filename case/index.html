@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    #wrapper {
+        border: 1px solid black;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+
+    }
+
+    .hide {
+        border: 1px solid black;
+        margin-top: 100px;
+        width: 80%;
+        text-align: center;
+        border-radius: 4px;
+        margin: 100px auto 50px auto;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    #startBtn {
+        padding: 8px 30px;
+        display: inline-block;
+        background-color: blue;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .hide1 {
+        width: 80%;
+        margin: 100px auto 20px auto;
+    }
+
+    .logo {
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width:100%;
+        background-size: cover;
+
+    }
+
+    .logo img {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+
+    }
+</style>
+
+<body>
+<div>
+    <div id="wrapper">
+        <div id="welcomeScreen" class="hide">
+            <h1> Ai Là Triệu Phú</h1>
+            <a id="startBtn" href="AiLaTrieuPhu.html" onclick="myFunction()">Start</a>
+        </div>
+        <div class="logo">
+            <img src="img/anh.png" width="0px">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
