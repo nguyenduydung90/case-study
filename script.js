@@ -49,7 +49,7 @@ function showQuestion(question_1) {
 }
 
 function chooseAswer(id) {
-    // a.innerHTML = soundCorect.getSound()
+
     if (!confirm("Đây có phải là đáp án cuối cùng của bạn không")) {
 
         return ;
@@ -79,10 +79,12 @@ function countdown() {
     if (timeCount < -1) {
         clearInterval(timeID);
         message = window.confirm('Chơi lại');
-        let reload2 = reload();
-        if (message) {
-            let reload2 = reload();
-        }
+        //
+        reload()
+        // if (message) {
+        //     //
+        //     reload()
+        // }
     }
 }
 
