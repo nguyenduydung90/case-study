@@ -7,7 +7,7 @@ class Question {
     }
 
     checkAnswer(answer) {
-        return answer == this.correctAnswer;
+        return answer === this.correctAnswer;
     }
 }
 
@@ -35,12 +35,9 @@ showQuestion(question1);
 function next(index) {
     ++index;
     showQuestion(question[index]);
-
-
 }
 
 function showQuestion(question_1) {
-
     getQuestion.innerHTML = question_1.content;
     getQuestion.setAttribute("idQuestion", question.indexOf(question_1));
     for (let i = 0; i < 5; i++) {
@@ -50,13 +47,12 @@ function showQuestion(question_1) {
 }
 
 function chooseAswer(id) {
-    a.innerHTML = soundCorect.getSound()
+    a.innerHTML = soundCorect.getSound();
     let answer = document.getElementById(id).innerHTML;
     let getQestId1 = document.getElementById('question');
     let idQuestion = parseInt(getQestId1.getAttribute("idQuestion"));
 
     if (!confirm("Đây có phải là đáp án cuối cùng của bạn không")) {
-
         return ;
     }
     if (question[idQuestion].checkAnswer(answer)) {
@@ -86,7 +82,6 @@ function countdown() {
         reload()
     }
 }
-
 
 function reload() {
     location.replace("index.html");

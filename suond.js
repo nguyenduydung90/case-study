@@ -27,6 +27,9 @@ let souND = "<audio autoplay>" +
 let winSound= "<audio autoplay>" +
     '<source src="sound/C15_dung.ogg" type="audio/mpeg">' +
     '</audio>';
+let answerSound="<audio autoplay>" +
+    '<source src="sound/tralo.ogg" type="audio/mpeg">' +
+    '</audio>';
 
 let sound1 = new Sound(sound);
 let soundCorect = new Sound(sounD);
